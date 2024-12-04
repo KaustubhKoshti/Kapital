@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Management</title>
+    <link rel="stylesheet" href="./css/finance.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Financial Management</h2>
+        <div class="flex-container">
+            <div class="financial-section">
+                <h3>Loan Management</h3>
+                <div class="input-group">
+                    <label for="loanAmount">Loan Amount:</label>
+                    <input type="number" id="loanAmount" placeholder="Enter Loan Amount">
+                </div>
+                <div class="input-group">
+                    <label for="loanInterestRate">Interest Rate:</label>
+                    <input type="number" id="loanInterestRate" placeholder="Enter Loan Interest Rate">
+                </div>
+                <div class="input-group">
+                    <label for="loanTerm">Term (in months):</label>
+                    <input type="number" id="loanTerm" placeholder="Enter Loan Term">
+                </div>
+                <button class="btn" onclick="addLoan()">Add Loan</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Amount</th>
+                            <th>Interest Rate</th>
+                            <th>Term</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="loanTableBody">
+                        <!-- Loan data will be populated here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="financial-section">
+                <h3>FD Management</h3>
+                <div class="input-group">
+                    <label for="fdAmount">FD Amount:</label>
+                    <input type="number" id="fdAmount" placeholder="Enter FD Amount">
+                </div>
+                <div class="input-group">
+                    <label for="fdInterestRate">Interest Rate:</label>
+                    <input type="number" id="fdInterestRate" placeholder="Enter FD Interest Rate">
+                </div>
+                <div class="input-group">
+                    <label for="fdTerm">Term (in months):</label>
+                    <input type="number" id="fdTerm" placeholder="Enter FD Term">
+                </div>
+                <button class="btn" onclick="addFD()">Add FD</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Amount</th>
+                            <th>Interest Rate</th>
+                            <th>Term</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="fdTableBody">
+                        <!-- FD data will be populated here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./js/user-info-script.js"></script>
+</body>
+</html>

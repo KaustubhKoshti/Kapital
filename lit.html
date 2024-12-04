@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wealth Literacy Information</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            background-image: url('./img/wealth.jpg'); /* Add your background image path here */
+            background-size: 1000px;
+            background-position: bottom;
+            background-attachment: fixed;
+        }
+        header {
+            background-color: #004085;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 1px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 30px auto;
+            max-width: 1200px;
+            gap: 20px;
+        }
+        .section {
+            flex: 1;
+            min-width: 45%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #004085;
+            font-size: 1.5em;
+            margin: 0;
+            cursor: pointer;
+            position: relative;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+        }
+        h2::after {
+            content: '\25BC';
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 1.2em;
+            transition: transform 0.3s;
+        }
+        h2.active::after {
+            transform: rotate(-180deg);
+        }
+        .content {
+            display: none;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+        .content p, .content ul {
+            line-height: 1.7;
+            margin: 15px 0;
+        }
+        .content.show {
+            display: block;
+            max-height: 600px;
+            padding-top: 10px;
+        }
+
+        /* Centered section styling for Essential Financial Principles */
+        #centered-section {
+            width: 80%;
+            margin: 50 center; /* Center the section */
+            background-color: rgba(255, 255, 255, 0.8); /* Lighter background color */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wealth Literacy Information</h1>
+    </header>
+
+    <div class="container">
+        <!-- First Section: Financial Literacy Challenges -->
+        <div class="section">
+            <h2 class="collapsible">Financial Literacy Challenges</h2>
+            <div class="content">
+                <p>Financial literacy refers to the understanding of key financial principles and the ability to apply them in managing personal finances. Here are the common challenges people face:</p>
+                <ul>
+                    <li><strong>Lack of essential knowledge:</strong> Many people lack basic financial skills to manage their money effectively, which can lead to poor decision-making.</li>
+                    <li><strong>Pressure of expensive loans:</strong> Students, especially, face the challenge of managing costly education loans, often without guidance on repayment or budgeting.</li>
+                    <li><strong>Spending habits:</strong> Overspending and reliance on credit cards are major financial pitfalls, often resulting in accumulating debt and no emergency fund.</li>
+                    <li><strong>Bad financial advice:</strong> Poorly informed financial advice, especially from untrustworthy sources, can exacerbate financial difficulties.</li>
+                    <li><strong>Convenience over savings:</strong> People often prioritize convenience—buying on credit or through costly subscriptions—rather than focusing on savings and investments.</li>
+                    <li><strong>Social influences:</strong> Peer pressure and lifestyle influences, such as keeping up with friends, often lead to overspending and poor financial decisions.</li>
+                    <li><strong>Missed opportunities:</strong> Lack of awareness about government schemes like Jan Dhan Yojana, Atal Pension Yojana, and tax-saving opportunities leads to missed savings.</li>
+                    <li><strong>Security risks:</strong> Ignorance about protecting personal financial information increases the risk of financial fraud and identity theft. Never share OTPs or banking details with strangers.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Second Section: Financial Fraud -->
+        <div class="section">
+            <h2 class="collapsible">Financial Fraud</h2>
+            <div class="content">
+                <p>Financial fraud involves deceptive activities that cause financial loss to individuals or organizations. Below are the most common forms of financial fraud:</p>
+                <ul>
+                    <li><strong>Identity Theft:</strong> This involves stealing someone's personal information to commit fraud, such as applying for credit cards or loans in their name.</li>
+                    <li><strong>Credit Card Fraud:</strong> Unauthorized use of a person's credit card information for fraudulent purchases or cash withdrawals.</li>
+                    <li><strong>Ponzi Schemes:</strong> Fraudulent investment scams promising high returns with little or no risk, often paying earlier investors with money from new investors.</li>
+                    <li><strong>Phishing:</strong> Deceptive emails or messages trick individuals into revealing sensitive information like passwords and banking details.</li>
+                    <li><strong>Insurance Fraud:</strong> False claims or deliberate misrepresentations made to receive payouts from insurance companies.</li>
+                    <li><strong>Bank Fraud:</strong> Illegal activities such as forging checks, embezzlement, or hacking into bank accounts.</li>
+                </ul>
+                <p>To protect yourself from financial fraud, take these precautions:</p>
+                <ul>
+                    <li>Monitor your bank and credit card statements regularly for unauthorized transactions.</li>
+                    <li>Use strong passwords and two-factor authentication for all your financial accounts.</li>
+                    <li>Never click on suspicious links or provide personal information via email or phone to unknown sources.</li>
+                    <li>Report lost or stolen cards immediately to your bank.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Third Section: Essential Financial Principles -->
+        <div id="centered-section" class="section">
+            <h2 class="collapsible">Essential Financial Principles</h2>
+            <div class="content">
+                <p>Understanding key financial principles is critical to managing wealth successfully. Here are the essential financial principles everyone should know:</p>
+                <ul>
+                    <li><strong>Budgeting:</strong> Create a monthly budget that tracks all your income and expenses. This helps avoid overspending and ensures you’re saving regularly.</li>
+                    <li><strong>Emergency Fund:</strong> Save at least 3-6 months of living expenses in an easily accessible account to cover unforeseen events like job loss or medical emergencies.</li>
+                    <li><strong>Compound Interest:</strong> Start saving or investing early to take advantage of compound interest, where interest is earned on both the initial investment and the interest that accumulates.</li>
+                    <li><strong>Debt Management:</strong> Focus on paying off high-interest debt, like credit cards, as soon as possible. Avoid taking on new debt unless necessary.</li>
+                    <li><strong>Credit Scores:</strong> A good credit score opens doors to favorable loan terms and lower interest rates. Pay bills on time and keep your credit utilization ratio low.</li>
+                    <li><strong>Investing Early:</strong> The earlier you invest, the more time your money has to grow. Diversify your investments to balance risk and reward.</li>
+                    <li><strong>Inflation:</strong> Inflation reduces the purchasing power of money over time. Protect yourself by investing in assets like stocks or real estate, which typically outpace inflation.</li>
+                    <li><strong>Retirement Planning:</strong> Start contributing to retirement accounts as soon as possible. The power of compound growth will significantly increase your savings over time.</li>
+                    <li><strong>Insurance:</strong> Protect yourself and your family by having adequate health, life, and property insurance. This shields you from significant financial loss in case of emergencies.</li>
+                    <li><strong>Diversification:</strong> Spread your investments across different asset classes (stocks, bonds, real estate) to reduce risk and ensure stability in your portfolio.</li>
+                    <li><strong>Setting Financial Goals:</strong> Clearly define your short-term and long-term financial goals, and regularly review your progress. Breaking them into smaller, manageable steps makes them easier to achieve.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const collapsibleHeaders = document.querySelectorAll(".collapsible");
+
+            collapsibleHeaders.forEach(header => {
+                header.addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    const content = this.nextElementSibling;
+
+                    if (content.classList.contains("show")) {
+                        content.classList.remove("show");
+                        content.style.maxHeight = null;
+                    } else {
+                        content.classList.add("show");
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - KAPITAL</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f3f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Lato', sans-serif;
+        }
+        .team-member {
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+        .role {
+            color: #2980b9;
+            font-weight: bold;
+        }
+        .fun-fact {
+            font-style: italic;
+            color: #8e44ad;
+        }
+        .section-header {
+            background-color: #2980b9;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .fade-in {
+            opacity: 0;
+            transition: opacity 0.6s ease;
+        }
+        .visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Us</h1>
+
+        <section id="project-overview" class="fade-in">
+            <h2 class="section-header">Project Overview</h2>
+            <p>
+                <strong>KAPITAL</strong> is a web development project focused on financial planning and wealth literacy. The platform is designed to help users manage their personal finances by tracking their expenses and assets while providing educational resources on wealth management.
+            </p>
+        </section>
+
+        <section id="team-introduction" class="fade-in">
+            <h2 class="section-header">Meet the Team</h2>
+            
+            <div class="team-member">
+                <h3>Kaustubh</h3>
+                <p class="role">Full Stack Developer</p>
+                <p>Kaustubh is responsible for both front-end and back-end development, ensuring that the platform runs smoothly and efficiently.</p>
+                <p class="fun-fact">Fun fact: Kaustubh is also a Python developer and loves listening to music in his free time.</p>
+            </div>
+
+            <div class="team-member">
+                <h3>Shivani</h3>
+                <p class="role">Database Manager</p>
+                <p>Manages all the data related to users, transactions, and educational content on the platform.</p>
+                <p class="fun-fact">Fun fact: Shivani is a coffee enthusiast and always finds time to brew the perfect cup during breaks.</p>
+            </div>
+
+            <div class="team-member">
+                <h3>Soumitra</h3>
+                <p class="role">UI/UX Designer</p>
+                <p>Responsible for creating an intuitive, user-friendly interface that provides a seamless experience for users.</p>
+                <p class="fun-fact">Fun fact: Soumitra is an artist at heart and often sketches ideas on a tablet before bringing them to life in code.</p>
+            </div>
+
+            <div class="team-member">
+                <h3>Shreeya</h3>
+                <p class="role">Content Specialist</p>
+                <p>Curates the financial literacy content, ensuring it is engaging, educational, and accessible to all users.</p>
+                <p class="fun-fact">Fun fact: Shreeya loves reading finance books and is the go-to person for investment advice.</p>
+            </div>
+        </section>
+
+        <!-- <section id="project-timeline" class="fade-in">
+            <h2 class="section-header">Project Timeline</h2>
+            <p>
+                KAPITAL began as an idea to create a tool for improving financial literacy and planning. After brainstorming and planning sessions, we started development by setting up the core features of the platform. We are currently in the testing phase and plan to launch the platform soon, adding more educational resources and features in future updates.
+            </p>
+        </section> -->
+
+        <section id="motivation-inspiration" class="fade-in">
+            <h2 class="section-header">Motivation & Inspiration</h2>
+            <p>
+                Our team is passionate about financial literacy because we believe it's a vital skill that everyone should have. We were inspired by the lack of accessible financial education resources and wanted to create something that could make a difference in people's lives by helping them take control of their finances.
+            </p>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener('scroll', function () {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach(element => {
+                const position = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1;
+                if (position < screenPosition) {
+                    element.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

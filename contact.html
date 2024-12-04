@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - KAPITAL</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f3f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Lato', sans-serif;
+        }
+        .contact-info {
+            margin-bottom: 30px;
+            transition: background-color 0.3s ease;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .contact-info:hover {
+            background-color: #f0f3f5;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or need more information about KAPITAL, feel free to reach out to any of our team members below:</p>
+
+        <div class="contact-info">
+            <h2>Kaustubh</h2>
+            <p>Email: <a href="mailto:kaustubhkoshti50@gmail.com">kaustubhkoshti50@gmail.com</a></p>
+            <p>Contact No: +91 9422959539</p>
+        </div>
+
+        <div class="contact-info">
+            <h2>Soumitra</h2>
+            <p>Email: <a href="mailto:soumij11@gmail.com">soumij11@gmail.com</a></p>
+            <p>Contact No: +91 9702345841</p>
+        </div>
+
+        <div class="contact-info">
+            <h2>Shreeya</h2>
+            <p>Email: <a href="mailto:shreeyaj2020@gmail.com">shreeyaj2020@gmail.com</a></p>
+            <p>Contact No: +91 8291470020</p>
+        </div>
+
+        <div class="contact-info">
+            <h2>Shivani</h2>
+            <p>Email: <a href="mailto:shivanibodke1903@gmail.com">shivanibodke1903@gmail.com</a></p>
+            <p>Contact No: +91 7021700357</p>
+        </div>
+    </div>
+
+    <script>
+        // Hover effect for contact information
+        const contactInfo = document.querySelectorAll('.contact-info');
+        contactInfo.forEach(info => {
+            info.addEventListener('mouseenter', () => {
+                info.style.backgroundColor = '#e1f5fe';
+            });
+            info.addEventListener('mouseleave', () => {
+                info.style.backgroundColor = '';
+            });
+        });
+    </script>
+</body

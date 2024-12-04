@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #e0f7fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(../img/20945652.jpg); /* Add your image path here */
+    background-size: 1000px ;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+}
+
+header {
+    background-color: #0288d1;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    width: 50px; 
+    height: 50px; 
+    margin: 0; 
+    border-radius: 50%; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.3s ease;
+    display: inline-block; 
+    vertical-align: middle; 
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    margin: 0 0 0 5px; 
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.auth-buttons .button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    color: white;
+    background-color: #0277bd;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.auth-buttons .button:hover {
+    background-color: #01579b;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for clarity */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.panel {
+    border-radius: 10px;
+    background-color: #ad7373;
+    padding: 30px;
+    width: 180px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px; 
+}
+
+.panel:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.panel a {
+    text-decoration: none;
+    color: #0288d1;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+footer {
+    background-color: #0288d1;
+    color: white;
+    padding: 15px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffeb3b;
+}
+
+.logout-btn {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.logout-btn:hover {
+    background-color: #d32f2f;
+}
